@@ -14,12 +14,17 @@ const navLinks = [
   { name: "Ways to Take Action", href: "/action" },
 ];
 
-const Navbar = () => {
+export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <nav className="bg-white shadow-md fixed w-full z-50">
-      <div className="container mx-auto flex justify-between items-center p-4">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5 }}
+        className="container mx-auto flex justify-between items-center p-4"
+      >
         {/* Logo */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
@@ -31,7 +36,12 @@ const Navbar = () => {
         </motion.div>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex gap-6">
+        <motion.div
+          className="hidden md:flex gap-6"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+        >
           {navLinks.map(({ name, href }) => (
             <motion.div key={name} whileHover={{ scale: 1.1 }}>
               <Link
@@ -42,18 +52,31 @@ const Navbar = () => {
               </Link>
             </motion.div>
           ))}
-        </div>
+        </motion.div>
+        <motion.button
+          className="hidden md:flex"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+        >
+          Donate Now
+        </motion.button>
 
         {/* Mobile Menu Toggle */}
-        <div className="md:hidden">
+        <motion.div
+          className="md:hidden"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.6 }}
+        >
           <button onClick={() => setIsOpen(!isOpen)}>
             <Icon
               icon={isOpen ? "mdi:close" : "mdi:menu"}
               className="text-3xl text-gray-700"
             />
           </button>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
 
       {/* Mobile Menu */}
       <AnimatePresence>
@@ -64,7 +87,12 @@ const Navbar = () => {
             exit={{ opacity: 0, y: -20 }}
             className="md:hidden bg-white shadow-md"
           >
-            <div className="flex flex-col items-center gap-4 p-4">
+            <motion.div
+              className="flex flex-col items-center gap-4 p-4"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.8 }}
+            >
               {navLinks.map(({ name, href }) => (
                 <motion.div key={name} whileHover={{ scale: 1.1 }}>
                   <Link
@@ -75,12 +103,10 @@ const Navbar = () => {
                   </Link>
                 </motion.div>
               ))}
-            </div>
+            </motion.div>
           </motion.div>
         )}
       </AnimatePresence>
     </nav>
   );
-};
-
-export default Navbar;
+}

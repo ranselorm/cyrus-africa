@@ -12,6 +12,10 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        sans: ["Satoshi", "sans-serif"],
+        heading: ["var(--font-montserrat)", "system-ui", "sans-serif"],
+      },
     },
   },
   plugins: [],
