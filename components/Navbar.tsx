@@ -31,7 +31,9 @@ export default function Navbar() {
           animate={{ opacity: 1, x: 0 }}
         >
           <Link href="/">
-            <span className="text-2xl font-bold text-blue-600">Cuso</span>
+            <span className="text-2xl font-bold text-blue-600">
+              Cyrus Africa
+            </span>
           </Link>
         </motion.div>
 
@@ -54,7 +56,7 @@ export default function Navbar() {
           ))}
         </motion.div>
         <motion.button
-          className="hidden md:flex"
+          className="bg-primary text-white px-6 py-2 rounded-full text-xl font-medium transition hidden md:flex items-center gap-x-6 border border-primary hover:bg-blue-600 duration-200"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.4 }}

@@ -14,22 +14,22 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="relative z-10 text-white md:max-w-5xl flex flex-col items-start justify-start w-full"
+          className="relative z-10 text-white md:max-w-5xl flex flex-col gap-x-4 items-start justify-start w-full"
         >
-          <h1 className="text-4xl md:text-6xl font-bold mb-4 font-satoshi uppercase">
-            Economic resilience. Working together for sustainable solutions for
-            everyone
+          <h1
+            className="text-3xl md:text-5xl font-bold tracking-wide mb-4 font-heading uppercase"
+            style={{ lineHeight: 1.2 }}
+          >
+            Working together for sustainable{" "}
+            <span className="text-primary">solutions</span> for everyone
           </h1>
           <p className="text-lg md:text-xl mb-6">
-            Join us in making a difference by supporting economic resilience
-            worldwide.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet
+            quidem nisi animi.
           </p>
-          <motion.button
-            whileHover={{ scale: 1.1 }}
-            className="bg-yellow-500 text-black px-6 py-3 rounded-lg text-lg font-medium shadow-lg hover:bg-yellow-600 transition flex items-center"
-          >
-            <Icon icon="mdi:email" className="mr-2 text-xl" /> SUBSCRIBE TO OUR
-            NEWSLETTER
+          <motion.button className="bg-primary text-white px-6 py-2 rounded-full text-xl font-medium transition flex items-center gap-x-6 border-2 border-primary hover:bg-transparent duration-200 mt-4">
+            Donate
+            <Icon icon="mdi-light:arrow-right" className="mr-2 text-xl" />
           </motion.button>
         </motion.div>
       </div>

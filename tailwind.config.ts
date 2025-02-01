@@ -9,8 +9,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: "#3b82f6",
+        light: "#d7f1fa",
+        dark: "#565656",
       },
       fontFamily: {
         sans: ["Satoshi", "sans-serif"],
