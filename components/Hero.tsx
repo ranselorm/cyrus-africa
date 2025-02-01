@@ -17,7 +17,7 @@ const Hero = () => {
           className="relative z-10 text-white md:max-w-5xl flex flex-col gap-x-4 items-start justify-start w-full"
         >
           <h1
-            className="text-3xl md:text-5xl font-bold tracking-wide mb-4 font-heading uppercase"
+            className="text-3xl md:text-5xl font-bold tracking-wider mb-4 font-heading uppercase"
             style={{ lineHeight: 1.2 }}
           >
             Working together for sustainable{" "}

@@ -37,7 +37,6 @@ export default function Navbar() {
           </Link>
         </motion.div>
 
-        {/* Desktop Menu */}
         <motion.div
           className="hidden md:flex gap-6"
           initial={{ opacity: 0 }}
