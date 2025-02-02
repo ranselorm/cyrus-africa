@@ -20,14 +20,13 @@ const TestimonialCard: React.FC<TestimonialProps> = ({
 }) => {
   return (
     <div
-      className={`p-6 rounded-2xl shadow-md ${bgColor} max-w-sm flex flex-col space-y-4 h-[250px] group hover:bg-blu transition-all duration-300 cursor-pointer`}
+      className={`p-6 rounded-2xl shadow-md bg-white border border-primary max-w-sm flex flex-col space-y-4 h-[230px] transition-all duration-300 cursor-pointer`}
     >
       {/* User Profile */}
       <div className="flex items-center space-x-3">
-        <img
-          src={image}
-          alt={name}
-          className="w-12 h-12 rounded-full object-cover"
+        <Icon
+          icon="material-symbols:person-outline-rounded"
+          className="w-12 h-12 rounded-full object-cover text-dark"
         />
         <div>
           <h3 className="text-lg font-semibold text-blu group-hover:text-second">
@@ -43,7 +42,7 @@ const TestimonialCard: React.FC<TestimonialProps> = ({
         {message}
       </p>
 
-      <div className="flex space-x-3 mt-auto">
+      {/* <div className="flex space-x-3 mt-auto">
         <Icon
           icon="mdi:twitter"
           className="text-gray-600 text-2xl cursor-pointer bg-white p-1 rounded-full"
@@ -52,7 +51,7 @@ const TestimonialCard: React.FC<TestimonialProps> = ({
           icon="mdi:linkedin"
           className="text-gray-600 text-2xl cursor-pointer bg-white p-1 rounded-full"
         />
-      </div>
+      </div> */}
     </div>
   );
 };

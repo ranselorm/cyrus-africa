@@ -6,34 +6,26 @@ import TestimonialCard from "./TestimonialCard";
 
 const testimonials = [
   {
-    name: "Roberta",
+    name: "Mary",
     role: "Small Business Owner",
     message:
-      "The process was smooth and transparent. I highly recommend Cyrus MicroCredit Services to anyone in need of financial assistance.",
-    image: "/images/roberta.avif",
-    bgColor: "bg-blue-200",
-  },
-  {
-    name: "Person Name",
-    role: "Small Business Owner",
-    message:
-      "I’m absolutely blown away by the new Qamarun template. You have to try it!",
+      "As a single mother, I faced many challenges. But CYRUS believed in me when no one else did. With their help, I was able to provide for my children and secure a better future for us all",
     image: "/images/person.avif",
     bgColor: "bg-pink-100",
   },
   {
-    name: "Mrs. Mia",
-    role: "Small Business Owner",
+    name: "Fatima",
+    role: "Micro-entrepreneur",
     message:
       "Cyrus MicroCredit Services made it easy for me to secure a loan for my small business. Their team is incredibly supportive.",
     image: "/images/mia.avif",
     bgColor: "bg-blue-100",
   },
   {
-    name: "Mrs. Mariam",
+    name: "Beatrice",
     role: "Small Business Owner",
     message:
-      "Thanks to Cyrus MicroCredit Services, I was able to expand my business and improve my family’s financial situation.",
+      "CYRUS gave me more than just a loan; they gave me the confidence to pursue my dreams. With their support, I turned my small business into a thriving enterprise.",
     image: "/images/mariam.avif",
     bgColor: "bg-pink-200",
   },
@@ -42,7 +34,7 @@ const testimonials = [
 const Testimonials: React.FC = () => {
   return (
     <section className="py-16 bg-white">
-      <div className="max-w-6xl mx-auto px-6 text-center mb-10">
+      <div className="max-w-6xl mx-auto px-6 text-center mb-16">
         <h2 className="text-3xl md:text-4xl font-bold text-dark">
           What’s Client Say?
         </h2>
@@ -51,11 +43,11 @@ const Testimonials: React.FC = () => {
       <div className="overflow-hidden container mx-auto px-4">
         <Marquee
           gradient={true}
-          gradientColor={"#fce7f3"}
+          gradientColor={"#fff"}
           gradientWidth={20}
           speed={50}
-          direction="right"
-          pauseOnHover={true}
+          direction="left"
+          //   pauseOnHover={true}
           className="space-x-6"
         >
           {testimonials.map((testimonial, index) => (
