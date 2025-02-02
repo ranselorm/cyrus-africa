@@ -3,6 +3,7 @@ import { Geist, Geist_Mono, Montserrat } from "next/font/google";
 import "./globals.css";
 import "./satoshi.css";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -25,6 +26,7 @@ export default function RootLayout({
       <body className={`${montserrat.variable} font-sans`}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
