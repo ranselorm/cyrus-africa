@@ -6,12 +6,12 @@ import { Icon } from "@iconify/react";
 import Link from "next/link";
 
 const navLinks = [
-  { name: "About Us", href: "/about" },
-  { name: "Our Focus", href: "/focus" },
-  { name: "Impact", href: "/impact" },
-  { name: "Programs", href: "/programs" },
-  { name: "Stories", href: "/stories" },
-  { name: "Ways to Take Action", href: "/action" },
+  { name: "About Us", href: "#" },
+  { name: "Our Focus", href: "#" },
+  { name: "Impact", href: "#" },
+  { name: "Programs", href: "#" },
+  { name: "Stories", href: "#" },
+  { name: "Ways to Take Action", href: "#" },
 ];
 
 export default function Navbar() {
