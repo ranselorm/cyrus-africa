@@ -33,7 +33,7 @@ const blogPosts = [
 
 const Blog = () => {
   return (
-    <section className="bg-gray-50 py-16 px-6 md:px-12">
+    <section className="bg-gray-50 py-16 px-6 md:px-12" id="blog">
       <div className="container mx-auto">
         <div className="flex justify-between">
           <h2 className="text-3xl md:text-4xl font-bold text-dark capitalize font-heading">

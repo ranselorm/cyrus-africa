@@ -13,7 +13,7 @@ const Impact = () => {
   const [customAmount, setCustomAmount] = useState("");
 
   return (
-    <section className="bg-blue-100 py-16 px-4">
+    <section className="bg-blue-100 py-16 px-4" id="about">
       <motion.div
         className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-12"
         initial={{ opacity: 0, y: 50 }}

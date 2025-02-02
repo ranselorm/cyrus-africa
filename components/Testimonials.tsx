@@ -33,7 +33,7 @@ const testimonials = [
 
 const Testimonials: React.FC = () => {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-white" id="testimonial">
       <div className="max-w-6xl mx-auto px-6 text-center mb-16">
         <h2 className="text-3xl md:text-4xl font-bold text-dark">
           What’s Client Say?

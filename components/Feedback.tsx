@@ -31,6 +31,7 @@ const Feedback = () => {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.3 }}
+      id="feedback"
     >
       <div className="container mx-auto px-4 ">
         <div className="mb-16 flex flex-col md:flex-row justify-between">

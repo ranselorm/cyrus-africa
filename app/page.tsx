@@ -15,7 +15,6 @@ export default function Home() {
       <Volunteer />
       <Impact />
       <ParallaxVolunteer />
-      {/* <Projects /> */}
       <Support />
       <Testimonials />
       <Blog />

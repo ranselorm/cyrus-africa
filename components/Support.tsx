@@ -31,7 +31,7 @@ const supportCards = [
 
 const SupportSection = () => {
   return (
-    <section className="bg-white py-16">
+    <section className="bg-white py-16" id="projects">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-dark capitalize font-heading text-center">
           Our Recent Projects
