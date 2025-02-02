@@ -1,4 +1,5 @@
 import About from "@/components/About";
+import Blog from "@/components/Blog";
 import Hero from "@/components/Hero";
 import HopeCard from "@/components/HopeCard";
 import Impact from "@/components/Impact";
@@ -14,6 +15,7 @@ export default function Home() {
       <Impact />
       <ParallaxVolunteer />
       <Support />
+      <Blog />
     </div>
   );
 }

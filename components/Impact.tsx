@@ -4,6 +4,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { Icon } from "@iconify/react/dist/iconify.js";
+import Stats from "./Stats";
 
 const donationAmounts = [50, 100, 250, 500];
 
@@ -69,6 +70,7 @@ const Impact = () => {
           </motion.button> */}
         </motion.div>
       </motion.div>
+      <Stats />
     </section>
   );
 };

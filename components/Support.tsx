@@ -34,7 +34,7 @@ const SupportSection = () => {
   return (
     <section className="bg-white py-16 px-6 md:px-12">
       <div className="container mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-dark uppercase font-heading">
+        <h2 className="text-3xl md:text-4xl font-bold text-dark capitalize font-heading">
           Here's where you come in
         </h2>
 
