@@ -18,7 +18,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-white shadow-md fixed w-full z-50">
+    <nav className="bg-white shadow-md w-full z-50">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -29,11 +29,13 @@ export default function Navbar() {
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
+          className="w-24 md:w-32"
         >
-          <Link href="/">
-            <span className="text-2xl font-bold text-blue-600">
-              Cyrus Africa
-            </span>
+          <Link href="/" className="">
+            <img
+              src="/images/cyrus.png"
+              className="w-full h-full object-cover"
+            />
           </Link>
         </motion.div>
 
