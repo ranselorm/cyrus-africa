@@ -20,9 +20,15 @@ const Footer = () => {
         viewport={{ once: true, amount: 0.3 }}
       >
         <div className="flex flex-col md:flex-row justify-between gap-6 items-start">
-          <h3 className="text-center md:text-left text-2xl uppercase font-bold font-heading">
-            Cyrus Africa
-          </h3>
+          <div className="w-24 md:w-40">
+            <Link href="/" className="">
+              <img
+                src="/images/footer-logo.png"
+                className="w-full h-full object-cover"
+              />
+            </Link>
+          </div>
+
           <div className="flex flex-wrap justify-center md:justify-start gap-6 text-gray-300">
             {[
               "Home",
@@ -43,25 +49,28 @@ const Footer = () => {
             ))}
           </div>
         </div>
-
-        <div className="flex gap-4 mt-8">
-          {["mdi:facebook", "mdi:twitter", "mdi:instagram", "mdi:youtube"].map(
-            (icon, index) => (
+        <div className="flex justify-between border-t border-gray-800 pt-12 mt-8">
+          <div className="flex gap-4">
+            {[
+              "mdi:facebook",
+              "mdi:twitter",
+              "mdi:instagram",
+              "mdi:youtube",
+            ].map((icon, index) => (
               <motion.a
                 key={index}
                 href="#"
                 whileHover={{ scale: 1.2 }}
-                className="bg-gray-800 p-2 rounded-full"
+                className="bg-gray-800 p-2 w-10 h-10 rounded-full flex items-center justify-center"
               >
                 <Icon icon={icon} className="text-primary text-xl" />
               </motion.a>
-            )
-          )}
+            ))}
+          </div>
+          <div className="mt-6 text-gray-400 text-sm text-center md:text-left">
+            © {new Date().getFullYear()} - Cyrus Africa
+          </div>
         </div>
-
-        {/* <div className="mt-6 text-gray-400 text-sm text-center md:text-left">
-          © {new Date().getFullYear()} - Cyrus Africa
-        </div> */}
       </motion.div>
     </footer>
   );

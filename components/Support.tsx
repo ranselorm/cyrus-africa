@@ -5,25 +5,23 @@ import { Icon } from "@iconify/react";
 
 const supportCards = [
   {
-    title: "Support Cyrus Africa International Projects",
-    description:
-      "Find out how we're tackling gender equality, social inclusion, economic resilience, and climate action in the most effective way.",
+    title: "Empowering Shea Nuts Farmers",
+    description: "The Role of Technology and Algorithms in Access to Capital",
     icon: "mdi:hand-heart-outline",
     linkText: "SEE HOW",
     linkUrl: "#",
   },
   {
-    title: "Get Involved in Community Programs",
+    title: "Decoding Credit Risk",
     description:
-      "Join hands to uplift women entrepreneurs and provide skill-based training that helps them succeed in trading and business.",
+      "How Algorithms are Revolutionizing Lending to Shea Nuts Farmers",
     icon: "mdi:account-group-outline",
     linkText: "SEE HOW",
     linkUrl: "#",
   },
   {
-    title: "Mentor & Guide Emerging Entrepreneurs",
-    description:
-      "Your expertise can help empower women with financial literacy, mentorship, and networking opportunities to grow their businesses.",
+    title: "The Ekulibi Project",
+    description: "Understanding Poverty: A Multi-dimensional Perspective",
     icon: "mdi:school-outline",
     linkText: "SEE HOW",
     linkUrl: "#",
@@ -32,13 +30,12 @@ const supportCards = [
 
 const SupportSection = () => {
   return (
-    <section className="bg-white py-16 px-6 md:px-12">
-      <div className="container mx-auto text-center">
+    <section className="bg-white py-16">
+      <div className="container mx-auto text-center px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-dark capitalize font-heading">
-          Here's where you come in
+          Our Recent Projects
         </h2>
 
-        {/* Cards Section */}
         <motion.div
           className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6"
           initial="hidden"
@@ -49,7 +46,7 @@ const SupportSection = () => {
           {supportCards.map((card, index) => (
             <motion.div
               key={index}
-              className="bg-light rounded-lg shadow-lg p-8 flex flex-col items-center text-center w-full h-[450px]"
+              className="bg-light rounded-lg p-6 flex flex-col items-center text-center w-full h-[350px]"
               variants={{
                 hidden: { opacity: 0, y: 50 },
                 visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
@@ -61,7 +58,7 @@ const SupportSection = () => {
                   className="text-4xl text-primary rounded-full"
                 />
               </div>
-              <h3 className="text-lg font-semibold text-dark font-heading">
+              <h3 className="text-lg md:text-xl uppercase font-bold text-dark font-heading">
                 {card.title}
               </h3>
               <div className="flex-grow">
@@ -69,12 +66,12 @@ const SupportSection = () => {
                   {card.description}
                 </p>
               </div>
-              <a
+              {/* <a
                 href={card.linkUrl}
                 className="text-dark font-bold mt-6 hover:underline"
               >
                 {card.linkText}
-              </a>
+              </a> */}
             </motion.div>
           ))}
         </motion.div>
