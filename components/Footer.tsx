@@ -20,7 +20,7 @@ const Footer = () => {
         viewport={{ once: true, amount: 0.3 }}
       >
         <div className="flex flex-col md:flex-row justify-between gap-6 items-start">
-          <div className="w-24 md:w-40">
+          <div className="w-32 md:w-40">
             <Link href="/" className="">
               <img
                 src="/images/footer-logo.png"
@@ -29,7 +29,7 @@ const Footer = () => {
             </Link>
           </div>
 
-          <div className="flex flex-wrap justify-center md:justify-start gap-6 text-gray-300">
+          <div className="flex flex-wrap  justify-start gap-x-6 gap-y-3 text-gray-300">
             {[
               "Home",
               "About",
@@ -50,7 +50,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex justify-between border-t border-gray-800 pt-12 mt-8">
-          <div className="flex gap-4">
+          <div className="flex gap-4 items-center">
             {[
               "mdi:facebook",
               "mdi:twitter",
@@ -61,7 +61,7 @@ const Footer = () => {
                 key={index}
                 href="#"
                 whileHover={{ scale: 1.2 }}
-                className="bg-gray-800 p-2 w-10 h-10 rounded-full flex items-center justify-center"
+                className="bg-gray-800 p-1 w-8 h-8 rounded-full flex items-center justify-center"
               >
                 <Icon icon={icon} className="text-primary text-xl" />
               </motion.a>
