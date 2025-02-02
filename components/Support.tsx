@@ -34,7 +34,7 @@ const SupportSection = () => {
   return (
     <section className="bg-white py-16 px-6 md:px-12">
       <div className="container mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+        <h2 className="text-3xl md:text-4xl font-bold text-dark uppercase font-heading">
           Here's where you come in
         </h2>
 
@@ -61,7 +61,7 @@ const SupportSection = () => {
                   className="text-4xl text-primary rounded-full"
                 />
               </div>
-              <h3 className="text-lg font-semibold text-gray-800 font-heading">
+              <h3 className="text-lg font-semibold text-dark font-heading">
                 {card.title}
               </h3>
               <div className="flex-grow">
@@ -71,7 +71,7 @@ const SupportSection = () => {
               </div>
               <a
                 href={card.linkUrl}
-                className="text-orange-500 font-bold mt-6 hover:underline"
+                className="text-dark font-bold mt-6 hover:underline"
               >
                 {card.linkText}
               </a>
