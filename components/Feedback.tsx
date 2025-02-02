@@ -43,10 +43,13 @@ const Feedback = () => {
           </p>
         </div>
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 gap-12"
+          className="flex flex-col-reverse md:flex-row gap-12"
           variants={containerVariants}
         >
-          <motion.form className="space-y-6" variants={containerVariants}>
+          <motion.form
+            className="space-y-6 flex-1"
+            variants={containerVariants}
+          >
             <motion.div
               className="grid grid-cols-1 md:grid-cols-2 gap-6"
               variants={itemVariants}
@@ -115,7 +118,7 @@ const Feedback = () => {
             </motion.div>
           </motion.form>
           <motion.div
-            className="relative h-[400px] md:h-[500px]"
+            className="relative h-[200px] md:h-[500px] flex-1"
             variants={itemVariants}
           >
             <img
