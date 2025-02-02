@@ -66,17 +66,17 @@ const Blog = () => {
                   alt={post.title}
                   className="w-full h-56 object-cover"
                 />
-                <span className="absolute bottom-0 left-4 bg-dark uppercase text-white px-3 py-1 text-xs font-medium rounded-md">
+                <span className="absolute bottom-0 left-4 bg-dark uppercase text-white px-3 py-1 text-xs font-medium ">
                   {post.category}
                 </span>
               </div>
 
               <div className="p-6 text-left flex-grow">
                 <p className="text-gray-500 text-sm">{post.date}</p>
-                <h3 className="text-lg font-semibold text-gray-900 mt-2 font-heading">
+                <h3 className="text-lg font-semibold text-dark mt-2 font-heading">
                   <Link
                     href={post.link}
-                    className="hover:text-green-600 transition"
+                    className="hover:text-primary transition"
                   >
                     {post.title}
                   </Link>

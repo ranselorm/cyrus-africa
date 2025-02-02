@@ -5,3 +5,9 @@
 :root {
   --font-montserrat: "var(--font-montserrat)";
 }
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+}
