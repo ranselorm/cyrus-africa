@@ -23,9 +23,9 @@ const Hero = () => {
             Working together for sustainable{" "}
             <span className="text-primary">solutions</span> for everyone
           </h1>
-          <p className="text-lg md:text-xl mb-6">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet
-            quidem nisi animi.
+          <p className="text-lg md:text-2xl mb-6">
+            Empowering women through sustainable trade and economic resilience.
+            Join us in creating opportunities for a brighter future.
           </p>
           <motion.button className="bg-primary text-white px-6 py-2 rounded-full text-xl font-medium transition flex items-center gap-x-6 border-2 border-primary hover:bg-transparent duration-200 mt-4">
             Donate
