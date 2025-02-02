@@ -17,7 +17,7 @@ const testimonials = [
     name: "Fatima",
     role: "Micro-entrepreneur",
     message:
-      "Cyrus MicroCredit Services made it easy for me to secure a loan for my small business. Their team is incredibly supportive.",
+      "Cyrus Africa made it easy for me to secure a loan for my small business. Their team is incredibly supportive.",
     image: "/images/mia.avif",
     bgColor: "bg-blue-100",
   },
